@@ -21,3 +21,12 @@ body {
   font-family: "Abril Fatface", cursive;
   color: white;
 }
+
+.homeBtn{
+  padding: 5px
+}
+
+
+.hide {
+  display:none;
+}
