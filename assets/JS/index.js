@@ -13,6 +13,7 @@ $(document).ready(function () {
   var contactClick = $("#contactClick");
   var motivational = $("#motivational");
   var motivationalClick = $("#motivationalClick");
+  var randomMotivation = $("#randomMotivation");
 
   // JS variables
 
@@ -81,5 +82,21 @@ $(document).ready(function () {
     genPass.addClass("hide");
     contacts.addClass("hide");
     motivational.removeClass("hide");
+  });
+
+  randomMotivation.on("click", function (event) {
+    event.preventDefault();
+    const settings = {
+      async: true,
+      crossDomain: true,
+      url: "https://type.fit/api/quotes",
+      method: "GET",
+    };
+    $.ajax(settings).done(function (response) {
+      const data = JSON.parse(response);
+      for (var i = 0; i < data.length; i++) {
+       console.log(data[i]);
+      }
+    });
   });
 });
