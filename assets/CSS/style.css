@@ -22,11 +22,31 @@ body {
   color: white;
 }
 
-.homeBtn{
-  padding: 5px
+.container {
+  position: relative;
+  min-height: 75vh;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
+.homeBtn {
+  padding: 5px;
+}
+
+.section-background {
+  background-color: #f2f4f5;
+}
+
+footer {
+  position: relative;
+  margin-top: 5px;
+  padding-top: 5px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f4f5;
+}
 
 .hide {
-  display:none;
+  display: none;
 }
