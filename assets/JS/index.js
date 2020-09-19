@@ -87,6 +87,7 @@ $(document).ready(function () {
   randomMotivation.on("click", function (event) {
     event.preventDefault();
     $("#random-generator").empty()
+    $("#random-generator2").empty()
     $.ajax({
       url: "https://api.forismatic.com/api/1.0/",
       jsonp: "jsonp",
@@ -102,7 +103,7 @@ $(document).ready(function () {
       var quoteDiv = $("<div>").text(quote);
       var authorDiv = $("<div>").text(author);
       $("#random-generator").append(quoteDiv);
-      $("#random-generator").append(authorDiv);
+      $("#random-generator2").append(authorDiv);
     });
   });
 });
