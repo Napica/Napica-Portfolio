@@ -86,17 +86,23 @@ $(document).ready(function () {
 
   randomMotivation.on("click", function (event) {
     event.preventDefault();
-    const settings = {
-      async: true,
-      crossDomain: true,
-      url: "https://type.fit/api/quotes",
-      method: "GET",
-    };
-    $.ajax(settings).done(function (response) {
-      const data = JSON.parse(response);
-      for (var i = 0; i < data.length; i++) {
-       console.log(data[i]);
-      }
+    $("#random-generator").empty()
+    $.ajax({
+      url: "https://api.forismatic.com/api/1.0/",
+      jsonp: "jsonp",
+      dataType: "jsonp",
+      data: {
+        method: "getQuote",
+        lang: "en",
+        format: "jsonp",
+      },
+    }).then(function (response) {
+      var quote = response.quoteText;
+      var author = response.quoteAuthor;
+      var quoteDiv = $("<div>").text(quote);
+      var authorDiv = $("<div>").text(author);
+      $("#random-generator").append(quoteDiv);
+      $("#random-generator").append(authorDiv);
     });
   });
 });
