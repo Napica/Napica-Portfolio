@@ -11,9 +11,9 @@ As an aspiring web developer.  This application is to show my progress. I believ
 ## Table of Contents
 
 ~[Purpose](#purpose)
-~[Instillation](#instillation)
+~[Installation](#installation)
 ~[Features](#features)
-~[Credits](#credits)
+~[Credits](#credit)
 
 <br />
 
@@ -26,13 +26,13 @@ The purpose of this appliaction is to show my steps as I make my journey.  This 
 <br />
 <br />
 
-## Instillation
+## Installation
 
 #
 
 **To edit/use the application, please follow the steps to pull the repository from GitHub through Git Bash and pull the script into VSCode, provided all three items are already installed on a local network.**
 
-Instillation steps are as follows:
+Installation steps are as follows:
 
 1. Access the repository at [Git Hub] https://github.com/Napica/Napica-Portfolio.
 2. Click on the code section (in green) and clone the SSH key.
